@@ -19,6 +19,16 @@ const routes = [
     name: 'me',
     component: () => import(/* webpackChunkName: "me" */ '../views/myPage.vue') 
   },
+  {
+    path: '/menu',
+    name: 'menu',
+    component: () => import(/* webpackChunkName: "menu" */ '../views/menu') 
+  },
+  {
+    path: '/swiper',
+    name: 'swiper',
+    component: () => import(/* webpackChunkName: "swiper" */ '../views/swiper') 
+  },
 ]
 
 const router = createRouter({

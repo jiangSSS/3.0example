@@ -13,7 +13,7 @@
   </div>
 </template>
 <script>
-import { getCurrentInstance, reactive } from "vue";
+import { reactive } from "vue";
 import { useRouter } from "vue-router";
 export default {
   setup() {
@@ -32,8 +32,6 @@ export default {
       },
     ]);
     const router = useRouter();
-    const instance = getCurrentInstance()
-    // console.log(instance);
     let handleClick = (e) => {
       switch (e) {
         case "1":
@@ -51,15 +49,14 @@ export default {
     };
     return {
       itemList,
-      handleClick,
-      instance
+      handleClick    
     };
   },
 };
 </script>
 <style scoped>
 .container {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   bottom: 0;
 }
@@ -69,7 +66,7 @@ export default {
 }
 .container .box .item {
   flex: 1;
-  padding: 10px 0;
+  padding: 0.5rem 0;
   color: #fff;
   background: #409eff;
   text-align: center;

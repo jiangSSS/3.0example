@@ -1,0 +1,18 @@
+<template>
+  <div class="menu-item">
+    <slot></slot>
+  </div>
+</template>
+<script>
+export default {
+  name:"MenuItem"
+  
+}
+</script>
+<style lang="scss" scoped>
+  .menu-item{
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+  }
+</style>

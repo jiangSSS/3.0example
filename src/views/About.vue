@@ -1,5 +1,17 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    
   </div>
 </template>
+<script>
+export default {
+  name: "about",
+};
+</script>
+<style lang="scss" scoped>
+.side-bar {
+  width: 5rem;
+  background: #000;
+  font-size: 0.5rem;
+}
+</style>

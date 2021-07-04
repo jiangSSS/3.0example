@@ -22,7 +22,6 @@ class remPlugin {
         this.onresize()
       },
     })
-    console.log(Vue);
   }
 }
 export default new remPlugin()

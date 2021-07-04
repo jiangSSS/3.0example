@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>这是一个组件</h1>
     <div>我的年龄是{{ age }}</div>
     <div>我的ID是{{ id }}</div>
     <div>我的新ID是{{ newId }}</div>
