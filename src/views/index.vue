@@ -4,7 +4,7 @@
     <button @click="toMenu()">查看菜单</button>
     <button @click="toSwiper()">查看轮播</button>
     <button @click="toMagnifier()">查看放大镜</button>
-    <button @click="toSwiper()">查看五星好评</button>
+    <button @click="toStars()">查看五星好评</button>
   </div>
 </template>
 
@@ -39,6 +39,9 @@ export default {
     const toMagnifier = () => {
       router.push("/magnifier");
     };
+    const toStars = ()=>{
+      router.push("/stars")
+    }
     onBeforeMount(() => {
       console.log("onBeforeMount");
     }),
@@ -64,7 +67,8 @@ export default {
     return {
       toMenu,
       toSwiper,
-      toMagnifier
+      toMagnifier,
+      toStars
     };
   },
 };

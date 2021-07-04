@@ -34,6 +34,11 @@ const routes = [
     name: 'magnifier',
     component: () => import(/* webpackChunkName: "magnifier" */ '../views/magnifier') 
   },
+  {
+    path: '/stars',
+    name: 'stars',
+    component: () => import(/* webpackChunkName: "stars" */ '../views/stars') 
+  },
 ]
 
 const router = createRouter({

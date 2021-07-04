@@ -9,6 +9,8 @@ import CarItem from "./Carousel/item"
 
 import Magnifier from "./Magnifier"
 
+import Stars from "./stars"
+
 let JSUI = {}
 
 JSUI.install = function (Vue) {
@@ -21,6 +23,8 @@ JSUI.install = function (Vue) {
   Vue.component(CarItem.name, CarItem)
 
   Vue.component(Magnifier.name, Magnifier)
+
+  Vue.component(Stars.name, Stars)
 }
 
 export default JSUI
