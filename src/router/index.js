@@ -29,6 +29,11 @@ const routes = [
     name: 'swiper',
     component: () => import(/* webpackChunkName: "swiper" */ '../views/swiper') 
   },
+  {
+    path: '/magnifier',
+    name: 'magnifier',
+    component: () => import(/* webpackChunkName: "magnifier" */ '../views/magnifier') 
+  },
 ]
 
 const router = createRouter({

@@ -17,7 +17,7 @@ class remPlugin {
           rem.base = remBase
         }
       },
-      created() {
+      mounted(){
         window.onorientationchange = window.onresize = this.onresize
         this.onresize()
       },

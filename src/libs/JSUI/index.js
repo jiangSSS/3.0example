@@ -7,6 +7,8 @@ import ReSubMenu from "./treeMenu/ReSubMenu"
 import Carousel from "./Carousel"
 import CarItem from "./Carousel/item"
 
+import Magnifier from "./Magnifier"
+
 let JSUI = {}
 
 JSUI.install = function (Vue) {
@@ -17,6 +19,8 @@ JSUI.install = function (Vue) {
 
   Vue.component(Carousel.name, Carousel)
   Vue.component(CarItem.name, CarItem)
+
+  Vue.component(Magnifier.name, Magnifier)
 }
 
 export default JSUI
